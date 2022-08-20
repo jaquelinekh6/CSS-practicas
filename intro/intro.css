@@ -1,0 +1,121 @@
+body{
+    /*background-color: #2e111c*/
+    
+    background: radial-gradient(circle, rgba(32,2,14,1) 0%, rgb(59, 23, 38) 100%);
+    
+}
+/*.gradient
+{
+    background: radial-gradient(rgba(32,2,14,1)0%,rgba(51, 18, 32, 0)100%);
+   /* background:#b7b7b7;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 2;
+    animation: intro 5s ease-in forwards;
+    
+
+
+}*/
+@keyframes intro {
+    0% {
+        
+        background:radial-gradient(rgba(32,2,14,1)0%,rgba(51, 18, 32, 0)100%);
+    }
+    100%{
+        
+        background: radial-gradient(rgba(32,2,14,1)100%,rgba(51, 18, 32, 1)100%);;
+    }
+    
+}
+.loader
+{
+    /*#411133 */
+    
+    border: 20px solid rgb(65, 17, 51);
+    border-radius: 50%;
+    
+
+    width: 70px;
+    height: 70px;
+    animation: spin 3s cubic-bezier(0.5, 1, 0, 2.2) 2 forwards, intro 1.5s ease-in 1, outro 2s ease-in forwards 4s;
+    margin: auto;
+    display: block;
+    min-height: 10vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 0px 10px rgba(65, 17, 51, 0.689);
+    
+    
+
+}
+@keyframes spin
+{
+    0%{transform: rotate(45deg);}
+    100%{transform: rotate(405deg);}
+}
+@keyframes intro
+{
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+@keyframes outro
+{
+    0%{opacity: 100%;}
+    100%{opacity: 0%;}
+}
+/*.center
+{
+    border-top: 20px solid #b7b7b7;
+    border-left: 20px solid #b7b7b7;
+    right: 100px;
+    left: 100px;
+    top: 100px;
+    bottom: 100px;
+}*/
+.top
+{
+    border-top: 20px solid #b7b7b7;
+    border-left: 20px solid #b7b7b7;
+     /*+55*/  
+    right: 100px;
+    left: 100px;
+    top: 45px;
+    bottom: 155px;
+}
+
+
+.left
+{
+    border-bottom: 20px solid #b7b7b7;
+    border-left: 20px solid #b7b7b7;
+    right: 155px;
+    left: 45px;
+    top: 100px;
+    bottom: 100px;  
+}
+
+.right
+{
+    border-top: 20px solid #b7b7b7;
+    border-right: 20px solid #b7b7b7;
+    right: 45px;
+    left: 155px;
+    top: 100px;
+    bottom: 100px;
+}
+
+.bottom
+{
+    border-bottom: 20px solid #b7b7b7;
+    border-right: 20px solid #b7b7b7;
+    right: 100px;
+    left: 100px;
+    top: 155px;
+    bottom: 45px;
+}
+
