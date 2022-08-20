@@ -1,0 +1,77 @@
+body
+{
+    background: #494d5f;
+    font-family: 'Secular One', sans-serif;
+}
+nav 
+{
+    
+    position: relative;
+    margin:0;
+    padding: 0;
+
+    
+
+    background:#66538a;
+   /* backdrop-filter: blur(8px);*/
+    box-shadow: 0 0 8px 0 rgba(29, 29, 29, 0.2);
+    border-radius: 5px;
+    
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+a
+{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+
+    display:flex;
+    align-items: space-evenly;
+    transition: all 0.5s ease;
+    opacity:0;
+    
+
+}
+
+
+a:nth-child(1)
+{
+    animation: entrance 1s ease forwards;
+}
+a:nth-child(2)
+{
+    animation: entrance 1s ease forwards 0.2s;
+}
+a:nth-child(3)
+{
+    animation: entrance 1s ease forwards 0.4s;
+}
+a:nth-child(4)
+{
+    animation: entrance 1s ease forwards 0.6s;
+}
+
+@keyframes entrance {
+    from {
+        transform: translate3d(0,20px,0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+nav a:hover
+{
+    color: #000a2e;
+    text-shadow: 0px 0px 1px rgba(8, 47, 103, 0.345);
+}
+
